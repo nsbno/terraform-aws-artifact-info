@@ -9,6 +9,8 @@ terraform_versions: &terraform_versions
 
 terraform_folders: &terraform_folders
   - ./
+  - ./examples/container
+  - ./examples/lambda
 
 workflows:
   validate:

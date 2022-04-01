@@ -8,3 +8,19 @@ terraform {
     }
   }
 }
+
+locals {
+  path = "/artifacts/${var.application_name}"
+}
+
+data "aws_ssm_parameter" "version" {
+  name = var.application_name
+}
+
+data "aws_ssm_parameter" "location" {
+  name = "${var.application_name}/location"
+}
+
+data "aws_ssm_parameter" "path" {
+  name = "${var.application_name}/path"
+}

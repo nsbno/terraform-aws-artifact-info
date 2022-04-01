@@ -19,8 +19,22 @@ module "artifact_info" {
 }
 ----
 
+== Examples
+
+These examples show how you can deploy your application, and keep it up to date, using this module.
+
+link:examples/container/main.tf[Container]::
+Deploy your container to a fargate cluster.
+
+link:examples/lambda/main.tf[Lambda]::
+A simple lambda function!
+
 == Relevant Repositories
 
 link:https://github.com/nsbno/terraform-aws-delivery-pipeline[Delivery Pipeline]::
 Set up a delivery pipeline for your team!
 This is what will populate information about your artifacts.
+
+link:https://github.com/nsbno/terraform-aws-pipeline-set-version[Set Version]::
+The application that finds the artifact and updates SSM with the latest and greatest information.
+This is deployed for you with the delivery pipeline!
