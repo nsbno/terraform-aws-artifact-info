@@ -7,6 +7,18 @@ Get all information you need about your artifacts!
 
 toc::[]
 
+== About
+
+By abstracting away all the details from the deployment pipeline, this module gives you easy access to info about your artifacts.
+
+So you get the following outputs:
+
+* The version of your artifact
+* The S3 Bucket or ECR Registry of your artifact
+* The path of your artifact.
+
+This way, you don't need to know anything about the storage of your artifact or how to access it!
+
 == Usage
 To use this module, just add it to your terraform!
 
