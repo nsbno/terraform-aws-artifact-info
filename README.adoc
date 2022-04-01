@@ -1,0 +1,26 @@
+= Artifact Info
+:!toc-title:
+:!toc-placement:
+:toc:
+
+Get all information you need about your artifacts!
+
+toc::[]
+
+== Usage
+To use this module, just add it to your terraform!
+
+[source, hcl]
+----
+module "artifact_info" {
+  source = "github.com/nsbno/terraform-aws-artifact-info?ref=x.y.z"
+
+  application_name = "my-frontend-app"
+}
+----
+
+== Relevant Repositories
+
+link:https://github.com/nsbno/terraform-aws-delivery-pipeline[Delivery Pipeline]::
+Set up a delivery pipeline for your team!
+This is what will populate information about your artifacts.
