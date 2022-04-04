@@ -14,13 +14,13 @@ locals {
 }
 
 data "aws_ssm_parameter" "version" {
-  name = var.application_name
+  name = local.path
 }
 
 data "aws_ssm_parameter" "location" {
-  name = "${var.application_name}/location"
+  name = "${local.path}/location"
 }
 
 data "aws_ssm_parameter" "path" {
-  name = "${var.application_name}/path"
+  name = "${local.path}/path"
 }
